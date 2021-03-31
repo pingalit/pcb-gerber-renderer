@@ -34,11 +34,6 @@ jobs:
       - name: setup gerber-renderer suite
         run: |
           pip install gerber-renderer
-
-      - name: setup gerber-checker suite
-        run: |
-          git clone https://github.com/ulikoehler/PCBCheck.git
-          pip install -r requirements.txt
       
       - name: run gerber-renderer script
         working-directory: .github/workflows/
