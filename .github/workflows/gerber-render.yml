@@ -36,7 +36,6 @@ jobs:
           pip install gerber-renderer
       
       - name: run gerber-renderer script
-        working-directory: .github/workflows/
         run: |
           python gerber-renderer.py
       
